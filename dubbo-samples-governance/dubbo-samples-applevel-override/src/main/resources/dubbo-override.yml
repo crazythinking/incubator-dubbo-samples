@@ -20,7 +20,7 @@
 # Execute on governance-appoverride-provider only and only those instances who's port is 20880 will be lifted to 1000.
 # This will take effect on all services in governance-appoverride-provider.
 ---
-apiVersion: v2.7
+configVersion: v2.7
 scope: application
 key: governance-appoverride-provider
 enabled: true
@@ -36,7 +36,7 @@ configs:
 # the traffic come out from governance-appoverride-consumer will be distributed evenly across all providers,
 # because governance-appoverride-consumer will consider them having the same weight 100.
 ---
-apiVersion: v2.7
+configVersion: v2.7
 scope: application
 key: governance-appoverride-consumer
 enabled: true
